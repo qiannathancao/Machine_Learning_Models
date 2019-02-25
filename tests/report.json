@@ -1,0 +1,15 @@
+{
+    "score": 0,
+    "tests_passed": 0,
+    "notes": {
+        "test_load_data": "FAIL",
+        "test_train_test_split": "FAIL",
+        "test_f1_measure": "FAIL",
+        "test_precision_and_recall": "FAIL",
+        "test_confusion_matrix": "FAIL",
+        "test_experiment_run_decision_tree": "FAIL",
+        "test_experiment_run_prior_probability": "FAIL",
+        "test_accuracy": "FAIL",
+        "test_experiment_run_and_compare": "FAIL"
+    }
+}
