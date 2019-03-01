@@ -3,9 +3,9 @@ import random, string
 import csv
 
 def make_fake_data():
-    y_true = np.random.random(100) > .5
-    y_pred = np.random.random(100) > .5
-    return y_true, y_pred
+    y_true = np.random.random(100)
+    y_pred = np.random.random(100)
+    return y_pred, y_true
 
 def write_random_csv_file(n_features, n_samples):
     from sklearn.datasets import make_classification
