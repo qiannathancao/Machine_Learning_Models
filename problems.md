@@ -1,8 +1,10 @@
 ## Problems
 
-## Environment setup and code implementation (5 points)
-Pass test cases by implementing the functions in `code`. Each test case is weighted 
-equally to make the overall score here (e.g. if you pass 1/2 test cases, you get 2.5 points).
+## Code implementation (5 points)
+Pass test cases by implementing the functions in the `code` directory.
+
+Your grade for this section is defined by the autograder. If it says you got an 80/100,
+you get 4 points here.
 
 ## Free response questions (5 points)
 
