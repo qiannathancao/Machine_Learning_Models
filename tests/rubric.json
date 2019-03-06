@@ -3,6 +3,10 @@
         "weight": "required",
         "depends": []
     },
+    "test_netid": {
+        "weight": "required",
+        "depends": []
+    },
     "test_mean_squared_error": {
         "weight": 1,
         "depends": []

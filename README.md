@@ -1,4 +1,7 @@
 # HW2: Linear regression and classification - EECS 349 @ NU
+**IMPORTANT: PUT YOUR NETID IN THE FILE** `netid` in the root directory of the assignment. 
+This is used to put the autograder output into Canvas. Please don't put someone else's netid 
+here, we will check.
 
 In this assignment, you will:
 - Implement linear and polynomial regression models
