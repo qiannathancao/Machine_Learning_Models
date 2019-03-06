@@ -43,6 +43,10 @@ data/parallel_lines.json
 data/transform_me.json
 ```
 
+Note that you can upload these files to the website http://ml-playground.com/. This
+website will let you see how different learning algorithms work on each dataset. This
+is not required for points but might be illuminating and useful for checking your work!
+
 For each of these datasets (.2 points each):
 
 1. Show a scatter plot of the data with each point colored according to its class.
