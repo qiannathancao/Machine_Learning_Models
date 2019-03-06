@@ -47,7 +47,7 @@ Note that you can upload these files to the website http://ml-playground.com/. T
 website will let you see how different learning algorithms work on each dataset. This
 is not required for points but might be illuminating and useful for checking your work!
 
-For each of these datasets (.2 points each):
+For each of these 5 datasets (.2 points each):
 
 1. Show a scatter plot of the data with each point colored according to its class.
    1. See load_json_data for code example.
@@ -57,7 +57,7 @@ For each of these datasets (.2 points each):
 
 For the dataset `data/transform_me.json` (1 point):
 1. Make sure the relevant test case in the function `transform_data` in `code/perceptron.py` passes.
-2. Show a scatter plot of the data before transformation and after transformation.
+2. Show two scatter plots of the data before transformation and after transformation.
 3. Why did the transformation you implemented work?
 4. Read about the kernel method (sometimes called the kernel trick):
    1. https://en.wikipedia.org/wiki/Kernel_method
