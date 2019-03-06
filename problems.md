@@ -11,7 +11,7 @@ saved as a .pdf and **uploaded to Canvas**.
 
 ### Polynomial regression (2 points)
 
-First, we will run experiments on the Polynomial Regression code you wrote.
+First, we will run experiments on the `PolynomialRegression` code you wrote.
 
 Generate random data (via the function you implemented `generate_regression_data`) 
 and perform regression on it with the class `PolynomialRegression` that you
@@ -19,13 +19,13 @@ implemented. Generate data of varying degrees, from 1 to 10. For each generated
 dataset (.1 points each):
 
 1. Show a scatter plot of each dataset. Indicate its degree in the title of the plot.
-2. Plot the polynomial of that degree on top of that dataset found by your implementation of 
+2. Plot the polynomial of that degree on top of the scatter plot found by your implementation of 
 `PolynomialRegression`.
 3. Try all polynomials of degree 1:10 on the dataset. Show a plot of mean squared error as a 
 function of degree.
 
 In the plots of mean squared error vs degree, what patterns do you notice? Specifically
-in relation to the actual degree polynomial used to generate the dataset? Explain why
+in relation to the actual degree polynomial used to generate the dataset. Explain why
 using the highest degree polynomial possible may or may not be a good idea. Put your
 answer in terms of *bias* and *variance* (1 point):
 
@@ -58,6 +58,3 @@ For the dataset `data/transform_me.json` (1 point):
 4. Read about the kernel method (sometimes called the kernel trick):
    1. https://en.wikipedia.org/wiki/Kernel_method
 5. Explain how the transformation you implemented relates to the kernel trick.
-
-
-
