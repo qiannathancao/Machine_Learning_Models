@@ -108,3 +108,5 @@ solution/
 
 # files generated during test
 tests/test.csv
+data/*.png
+.DS_Store

@@ -1,9 +1,9 @@
 # HW2: Linear regression and classification - EECS 349 @ NU
 
 In this assignment, you will:
-- Implement linear regression models
-- Implement linear classification models
-- Study the 
+- Implement linear and polynomial regression models
+- Implement perceptron
+- Investigate the performance of perceptrons on different datasets
 
 ## Clone this repository
 
@@ -15,7 +15,7 @@ To clone this repository run the following command:
 
 ## Files you edit
 
-See problems.md for what files you will edit.
+See problems.md for what files you will edit and what goes into the write-up.
 
 Do not edit anything in the `tests` directory. Files can be added to `tests` but files that exist already cannot be edited. Modifications to tests will be checked for.
 

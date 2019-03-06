@@ -1,13 +1,15 @@
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.linear_model import LinearRegression
+try:
+    import matplotlib.pyplot as plt
+except:
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
 
 class PolynomialRegression():
     def __init__(self, degree):
         """
-        Implement polynomial regression using sklearn's PolynomialFeatures from
-        scikit-learn and LinearRegression from sklearn. 
+        Implement polynomial regression from scratch.
         
         This class takes as input "degree", which is the degree of the polynomial 
         used to fit the data. For example, degree = 2 would fit a polynomial of the 
@@ -15,11 +17,16 @@ class PolynomialRegression():
 
             ax^2 + bx + c
         
-        You will implement this with sklearn. The documentation is here for the
-        relevant functions is here:
+        Your code will be tested by comparing it with implementations inside sklearn.
+        DO NOT USE THESE IMPLEMENTATIONS DIRECTLY IN YOUR CODE. You may find the 
+        following documentation useful:
 
         https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html
         https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+
+        Here are helpful slides:
+
+        http://interactiveaudiolab.github.io/teaching/eecs349stuff/eecs349_linear_regression.pdf
     
         The internal representation of this class is up to you. Read each function
         documentation carefully to make sure the input and output matches so you can
@@ -50,8 +57,7 @@ class PolynomialRegression():
         Fit the given data using a polynomial. The degree is given by self.degree,
         which is set in the __init__ function of this class. The goal of this
         function is fit features, a 1D numpy array, to targets, another 1D
-        numpy array using a combination of linear_model and PolynomialFeatures
-        from scikit-learn. 
+        numpy array.
         
         Internally, you should save the model and the data used for training.
         The data used for training will be used to compute the confidence of
@@ -102,7 +108,7 @@ class PolynomialRegression():
         features and the targets, and the polynomial fit by the model should be
         graphed on top of the points.
 
-        DO NOT USE plt.show() IN THIS FUNCTION.
+        DO NOT USE plt.show() IN THIS FUNCTION. Instead, use plt.savefig().
 
         Args:
             features (np.ndarray): 1D array containing real-valued inputs.

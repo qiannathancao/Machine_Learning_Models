@@ -1,4 +1,10 @@
 import numpy as np
+try:
+    import matplotlib.pyplot as plt
+except:
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
 
 def transform_data(features):
     """

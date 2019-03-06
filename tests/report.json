@@ -3,6 +3,9 @@
     "tests_passed": 0,
     "notes": {
         "test_mean_squared_error": "FAIL",
-        "test_imports": "FAIL - REQUIRED (automatic zero)"
+        "test_polynomial_regression": "FAIL",
+        "test_generate_regression_data": "FAIL",
+        "test_perceptron": "FAIL",
+        "test_transform_data": "FAIL"
     }
 }
