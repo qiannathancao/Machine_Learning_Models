@@ -12,7 +12,7 @@ In this assignment, you will:
 
 To clone this repository run the following command:
 
-``git clone https://github.com/nucs349/hw2-linear-regression-[your_username]``
+``git clone https://github.com/nucs349/hw2-linear-[your_username]``
 
 `[your_username]` is replaced in the above link by your Github username. Alternatively, just look at the link in your address bar if you're viewing this README in your submission repository in a browser. Once cloned, `cd` into the cloned repository. Every assignment has some files that you edit to complete it. 
 
