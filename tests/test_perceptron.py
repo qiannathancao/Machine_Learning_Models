@@ -10,7 +10,7 @@ def test_perceptron():
 
     #your perceptron should fit this dataset perfectly
 
-    assert (targets == targets_hat)
+    assert np.allclose(targets, targets_hat)
 
 def test_transform_data():
     features, targets = load_json_data('data/transform_me.json')
@@ -22,5 +22,4 @@ def test_transform_data():
     targets_hat = p.predict(features_transform)
 
     #your perceptron should fit this dataset perfectly after transforming the data
-
-    assert (targets == targets_hat)
+    assert np.allclose(targets, targets_hat)

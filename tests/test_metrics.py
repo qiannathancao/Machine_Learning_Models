@@ -6,6 +6,6 @@ def test_mean_squared_error():
     y_pred, y_true = make_fake_data()
 
     _est = mean_squared_error(y_pred, y_true)
-    _gt = metrics.mean_squared_error(y_true, y_pred)
+    _actual = metrics.mean_squared_error(y_true, y_pred)
 
-    assert (_est == _gt)
+    assert np.allclose(_actual, _est)
