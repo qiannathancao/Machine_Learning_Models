@@ -19,8 +19,8 @@ Generate data (via the function you implemented `generate_regression_data`)
 and perform regression on it with the class `PolynomialRegression` that you
 implemented. Generate data from polynomial functions of varying degrees, from 1 to 10. 
 
-#### (1 point) 
-For each of your 10 generated dataset, 
+#### For each of your 10 generated dataset (1 point) 
+ 
    1. run your implementation of 'PolynomialRegression' 10 times: One time for each degree, from 1:10. 
    2. create a single plot that shows mean squared error (vertical) of your regression as a function of degree (horizontal).
    
@@ -28,7 +28,7 @@ Now, pick a single data file (I suggest the one generated from a polynomial of d
    1. Show a scatter plot of the dataset. Indicate its degree in the title of the plot.
    2. Plot 3 functions learned with`PolynomialRegression` over the scatter plot: A functioned learned by a lower degree (e.g. if the data was generated with degree 4, then show a learned function with, say... degree 1); a function learned by the same degree (e.g. data generated with degree 4 and learned with a degree 4 polynomial) and the function that showed the lowest error learned with a higer degree polynomial than was used to generate the data.
 
-#### (1 point)
+#### Describe what's going on here (1 point) 
 In the plots of mean squared error vs degree, what patterns do you notice? Specifically
 in relation to the actual degree polynomial used to generate the dataset. Explain why
 using the highest degree polynomial possible may or may not be a good idea. Put your
