@@ -20,8 +20,8 @@ Generate data (via the function you implemented `generate_regression_data`). Gen
 
 #### Perform regression (1 point) 
 For each of your 10 generated datasets:
-   1. run your implementation of `PolynomialRegression` 10 times: One time for each degree, from 1:10. 
-   2. create a single plot that shows mean squared error (vertical) of your regression as a function of degree (horizontal).
+   1. Run your implementation of `PolynomialRegression` 10 times, one time for each degree, from 1:10. 
+   2. create a single plot for that data set that shows mean squared error (vertical) of your regression as a function of degree (horizontal).
    
 Now, pick a single data file (I suggest the one generated from a polynomial of degree 4, but it's your choice) to illustrate bias vs variance and the dangers of overfitting.
    1. Show a scatter plot of the dataset. Indicate its degree in the title of the plot.
