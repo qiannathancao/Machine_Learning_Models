@@ -15,13 +15,12 @@ saved as a .pdf and **uploaded to Canvas**.
 
 First, we will run experiments on the `PolynomialRegression` code you wrote.
 
-Generate data (via the function you implemented `generate_regression_data`) 
-and perform regression on it with the class `PolynomialRegression` that you
-implemented. Generate data from polynomial functions of varying degrees, from 1 to 10. 
+#### Generate data 
+Generate data (via the function you implemented `generate_regression_data`). Generate data from polynomial functions of varying degrees, from 1 to 10. 
 
-#### For each of your 10 generated dataset (1 point) 
- 
-   1. run your implementation of 'PolynomialRegression' 10 times: One time for each degree, from 1:10. 
+#### Perform regression (1 point) 
+For each of your 10 generated datasets:
+   1. run your implementation of `PolynomialRegression` 10 times: One time for each degree, from 1:10. 
    2. create a single plot that shows mean squared error (vertical) of your regression as a function of degree (horizontal).
    
 Now, pick a single data file (I suggest the one generated from a polynomial of degree 4, but it's your choice) to illustrate bias vs variance and the dangers of overfitting.
