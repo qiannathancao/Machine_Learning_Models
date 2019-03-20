@@ -23,7 +23,7 @@ For each of your 4 generated datasets:
    2. Create one plot for that dataset that shows mean squared error (vertical) of your regression as a function of degree (horizontal).
    
 Now, pick a single data file (I suggest the one generated from a polynomial of degree 4, but it's your choice) to illustrate bias vs variance and the dangers of overfitting.
-   1. Show a scatter plot of the dataset. Indicate its degree in the title of the plot.
+   1. Show a scatter plot of the dataset. Indicate the degree of the polynomial used to generate it in the title of the plot.
    2. Plot 3 functions learned with`PolynomialRegression` over the scatter plot: A functioned learned by a lower degree (e.g. if the data was generated with degree 4, then show a learned function with, say... degree 1); a function learned by the same degree (e.g. data generated with degree 4 and learned with a degree 4 polynomial) and the function that showed the lowest error learned with a higer degree polynomial than was used to generate the data.
 
 #### Describe what's going on here (1 point) 
@@ -50,7 +50,7 @@ Note that you can upload these files to the website http://ml-playground.com/. T
 website will let you see how different learning algorithms work on each dataset. This
 is not required for points but might be illuminating and useful for checking your work!
 
-#### For each of these 5 datasets (.2 points per data set):
+#### For each of these 5 datasets (1 point, broken into .2 points per data set):
 
 1. Generate (with your own code) a scatter plot of the data, with each point colored according to its true class.
    1. See load_json_data for code example.
