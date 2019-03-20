@@ -11,7 +11,7 @@ you get 4 points here.
 Answer the following free response questions in a separate document, 
 saved as a .pdf and **uploaded to Canvas**.
 
-### Polynomial regression (2 points)
+### Polynomial regression (total of 2 points, broken into 2 parts)
 
 First, we will run experiments on the `PolynomialRegression` code you wrote.
 
@@ -36,7 +36,7 @@ answer in terms of *bias* and *variance*:
 
 https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
 
-### Perceptron (2 points)
+### Perceptron (total of 2 points)
 
 The following datasets are provided:
 
