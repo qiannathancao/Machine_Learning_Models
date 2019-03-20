@@ -61,7 +61,7 @@ is not required for points but might be illuminating and useful for checking you
 
 #### For the dataset `data/transform_me.json` (1 point):
 1. Make sure you pass the relevant test case for the function `transform_data` in `code/perceptron.py`.
-2. Show two scatter plots of the data before transformation and after transformation.
+2. Show two scatter plots of the data, one before transformation and one and after transformation.
 
 #### Explain yourself (1 point):
 1. What transformation did you make?
