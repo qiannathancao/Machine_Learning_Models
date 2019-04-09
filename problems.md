@@ -15,9 +15,8 @@ saved as a .pdf and **uploaded to Canvas**.
    - A. Run your implementation of `PolynomialRegression` using degree {1,2,4,8}
    - B. Create one plot for that dataset that shows mean squared error of your regression as a function of degree. Make degree the horizontal dimension and error the vertical dimension.  Note: you must indicate the degree of polynomial used to GENERATE the data at the top of the plot, as well as indicating the degree of polynomial used to FIT the data along the horizontal access.
 
-#### 2. (0.5 point)Repeat exactly what you did in question 1, but with data with noise added ((`amount_of_noise` = 0.2). 
+#### 2. (0.5 point) Repeat exactly what you did in question 1, but with data with noise added (`amount_of_noise` = 0.2). 
 
-   
 #### 3. (0.5 points) Given your plots from question 1 and 2, describe the relationship of the error to the degree of poynomial used to generate the data originally and the degree of polynomial used to fit the data. How does this change as the amount of noise changes.
 
 #### 4. (0.5 points) Use the noisy dataset you generated from a 4th degree polynomial. Show a scatter plot of the dataset. Indicate the degree of the polynomial used to generate it in the title of the plot. Plot 3 functions learned with`PolynomialRegression` over the scatter plot: 
