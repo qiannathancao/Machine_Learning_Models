@@ -20,7 +20,7 @@ saved as a .pdf and **uploaded to Canvas**.
 #### 3. (0.5 points) Given your plots from question 1 and 2, describe the relationship of the error to the degree of poynomial used to generate the data originally and the degree of polynomial used to fit the data. How does this change as the amount of noise changes.
 
 #### 4. (0.5 points) Use the noisy dataset you generated from a 4th degree polynomial. Show a scatter plot of the dataset. Indicate the degree of the polynomial used to generate it in the title of the plot. Plot 3 functions learned with`PolynomialRegression` over the scatter plot: 
-   - a functioned learned by a lower degree (e.g. 1,2 or 3) polynomial regression
+   - a functioned learned by a lower degree (e.g. 1 or 2) polynomial regression
    - a function learned by the same degree (i.e. learned with a 4th degree polynomial)
    - a function learned by a polynomial with a higher degree than 4 that generated the lowest error
 
