@@ -14,8 +14,8 @@ def generate_regression_data(degree, N, amount_of_noise=1.0):
     following way.
 
     Reminder, you can add random noise to the output of a function by simply doing:
-        f'(x) = f(x) + N(0, noise)
-    where N(mu, std) is a draw from a normal distribution with mean 0 and standard deviation 1.
+        f'(x) = f(x) + N(0, std)
+    where N(0, std) is a draw from a normal distribution with mean 0 and standard deviation 1.
 
     In code, that looks like:
         y += np.random.normal(loc=0.0, scale=std, size=y.shape)
