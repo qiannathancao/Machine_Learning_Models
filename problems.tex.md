@@ -32,7 +32,7 @@ saved as a .pdf and **uploaded to Canvas**.
 
 (Aside: you can upload the json files containing the datasets to http://ml-playground.com/ to see how different learning algorithms work on each dataset. This is not required for points, and you're definitely not allowed to submit scatter plots built by ml-playground, but it might be illuminating and useful for checking your work).
 
-#### 8. (0.5 points) For each of the 5 datasets, say whether your perceptron successfuly separate the two classes on this dataset? Explain why or why not. 
+#### 8. (0.5 points) For each of the 5 datasets, say whether your perceptron successfuly separated the two classes on this dataset. Explain why or why not. 
 
 #### 9. (0.5 points) In `code/perceptron.py`, you passed a test case by implementing the function `transform_data`. Describe the transformation you made to the input data to pass the test case. Explain how it allowed you to pass the test case (i.e. how did the change made to the data enable the system to do what it could not previously do?).
 
