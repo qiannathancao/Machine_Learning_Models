@@ -1,3 +1,4 @@
+import numpy as np
 from code import mean_squared_error
 from sklearn import metrics
 from .test_utils import make_fake_data
