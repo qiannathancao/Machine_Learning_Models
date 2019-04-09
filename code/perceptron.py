@@ -28,10 +28,17 @@ class Perceptron():
         layer perceptron is an algorithm for supervised learning of a binary
         classifier. The idea is to draw a linear line in the space that separates
         the points in the space into two partitions. Points on one side of the 
-        line are one class and points on the other side are the other class. Here's
-        a helpful link to learn more:
-
-        https://en.wikipedia.org/wiki/Perceptron
+        line are one class and points on the other side are the other class.
+       
+        begin initialize weights
+            while not converged or not exceeded max_iterations
+                for each example in features
+                    if example is misclassified using weights
+                    then weights = weights + example * label_for_example
+            return weights
+        end
+        
+        Note that label_for_example is either -1 or 1.
 
         Use only numpy to implement this algorithm. 
 
@@ -46,12 +53,13 @@ class Perceptron():
     def fit(self, features, targets):
         """
         Fit a single layer perceptron to features to classify the targets, which
-        are binary classes (0 or 1). This function should terminate either after
+        are classes (-1 or 1). This function should terminate either after
         convergence (dividing line does not change between interations) or after
-        max_iterations (defaults to 200) iterations are done.
+        max_iterations (defaults to 200) iterations are done. Here is pseudocode for 
+        the perceptron learning algorithm:
 
         Args:
-            features (np.ndarray): 1D array containing inputs.
+            features (np.ndarray): 2D array containing inputs.
             targets (np.ndarray): 1D array containing binary targets.
         Returns:
             None (saves model and training data internally)
@@ -60,11 +68,11 @@ class Perceptron():
 
     def predict(self, features):
         """
-        Given features, a 1D numpy array, use the trained model to predict target 
+        Given features, a 2D numpy array, use the trained model to predict target 
         classes. Call this after calling fit.
 
         Args:
-            features (np.ndarray): 1D array containing real-valued inputs.
+            features (np.ndarray): 2D array containing real-valued inputs.
         Returns:
             predictions (np.ndarray): Output of saved model on features.
         """
