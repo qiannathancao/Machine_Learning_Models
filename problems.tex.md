@@ -17,7 +17,7 @@ saved as a .pdf and **uploaded to Canvas**.
   
 #### 2. (0.5 points) Now, use the  dataset you generated from a 4th degree polynomial to illustrate bias vs variance and the dangers of overfitting.
    - A. Show a scatter plot of the dataset. Indicate the degree of the polynomial used to generate it in the title of the plot.
-   - B. Plot 3 functions learned with`PolynomialRegression` over the scatter plot: A functioned learned by a lower degree (e.g. 1,2 or 3); a function learned by the same degree (e.g. data generated with a 4th degree polynomial and learned with a 4th degree polynomial) and the function that showed the lowest error that was learned with a higer degree polynomial than 4.
+   - B. Plot 3 functions learned with`PolynomialRegression` over the scatter plot: A functioned learned by a lower degree (e.g. 1,2 or 3); a function learned by the same degree (e.g. data generated with a 4th degree polynomial and learned with a 4th degree polynomial); and the regression learned by a polynomial with a higher degree than 4 (pick the higher-degree polynomial that generated the lowest error). 
 
 #### 3. (0.5 points) In the plots of mean squared error vs degree you did for question 1, describe the relationship of the error to the degree of poynomial used to generate the data originally and the degree of polynomial used to fit the data. 
 
