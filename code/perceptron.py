@@ -87,7 +87,7 @@ class Perceptron():
         DO NOT USE plt.show() IN THIS FUNCTION.
 
         Args:
-            features (np.ndarray): 1D array containing real-valued inputs.
+            features (np.ndarray): 2D array containing real-valued inputs.
             targets (np.ndarray): 1D array containing binary targets.
         Returns:
             None (plots to the active figure)
