@@ -13,7 +13,7 @@ saved as a .pdf and **uploaded to Canvas**.
 
 #### 1. (1 point) Generate data (via the function you implemented `generate_regression_data`) from polynomial functions of the following degrees: {1,2,4,8}. Be sure to add a little bit of noise to each dataset you create.  For each of the 4 datasets you generated: 
    - A. Run your implementation of `PolynomialRegression` 10 times, one time for each degree from 1:10. 
-   - B. Create one plot for that dataset that shows mean squared error (vertical) of your regression as a function of degree (horizontal).
+   - B. Create one plot for that dataset that shows mean squared error (vertical) of your regression as a function of degree (horizontal).  Note: you must indicate the degree of polynomial used to GENERATE the data at the top of the plot, as well as indicating the degree of polynomial used to FIT the data along the horizontal access.
    
 #### 2. (0.5 points) Given your plots from question 1, describe the relationship of the error to the degree of poynomial used to generate the data originally and the degree of polynomial used to fit the data. 
 
