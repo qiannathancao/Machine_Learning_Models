@@ -8,7 +8,7 @@ def test_polynomial_regression():
     for degree in degrees:
         p = PolynomialRegression(degree)
         for amount in amounts:
-            x, y = generate_regression_data(degree, amount)
+            x, y = generate_regression_data(degree, amount, amount_of_noise=0.0)
             p.fit(x, y)
             y_hat = p.predict(x)
             mse = mean_squared_error(y, y_hat)
