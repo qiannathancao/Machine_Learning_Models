@@ -30,7 +30,9 @@ class PolynomialRegression():
     
         The internal representation of this class is up to you. Read each function
         documentation carefully to make sure the input and output matches so you can
-        pass the test cases.
+        pass the test cases. However, do not use the functions numpy.polyfit or numpy.polval. 
+        You should implement the closed form solution of least squares as detailed in slide 10
+        of the lecture slides linked above.
 
         Usage:
             import numpy as np
