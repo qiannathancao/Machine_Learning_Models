@@ -61,10 +61,6 @@ class PolynomialRegression():
         function is fit features, a 1D numpy array, to targets, another 1D
         numpy array.
         
-        Internally, you should save the model and the data used for training.
-        The data used for training will be used to compute the confidence of
-        the predictions.
-
 
         Args:
             features (np.ndarray): 1D array containing real-valued inputs.
@@ -83,24 +79,6 @@ class PolynomialRegression():
             features (np.ndarray): 1D array containing real-valued inputs.
         Returns:
             predictions (np.ndarray): Output of saved model on features.
-        """
-        raise NotImplementedError()
-
-    def confidence(self, features):
-        """
-        Given features, compute the confidence of the trained model on the input
-        features. The confidence is computed by comparing the features to
-        the features used for training. The idea is to use the distance between
-        the features used for training and the features used at test time. If the
-        test features are far from the training features, the confidence is low.
-        Use the following formula to compute confidence of a single input feature x':
-
-            confidence(x') = 1 / min(||X - x'||)
-
-        This is the minimum distance between the the training data X and the test
-        point x'. The inverse of this distance is the confidence the model has for
-        the test point x'. 
-
         """
         raise NotImplementedError()
 
