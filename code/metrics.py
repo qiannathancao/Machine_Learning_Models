@@ -12,4 +12,4 @@ def mean_squared_error(estimates, targets):
 
     https://en.wikipedia.org/wiki/Mean_squared_error
     """
-    raise NotImplementedError()
+    return np.square(np.subtract(targets,estimates)).mean()

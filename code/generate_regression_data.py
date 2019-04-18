@@ -1,4 +1,5 @@
-import numpy as np 
+import numpy as np
+
 
 def generate_regression_data(degree, N, amount_of_noise=1.0):
     """
@@ -40,4 +41,11 @@ def generate_regression_data(degree, N, amount_of_noise=1.0):
             responds to x as a polynomial of degree. 
 
     """
-    raise NotImplementedError()
+    x= np.random.uniform(-1,1,N).reshape(N,1)
+    y = x**degree
+    # print("y ######: ",y)
+    y_std = np.std(y)
+    y += np.random.normal(loc=0.0, scale=amount_of_noise * y_std, size=y.shape)
+    y.reshape(N,1)
+    return x,y
+

@@ -19,7 +19,9 @@ def transform_data(features):
     Returns:
         transformed_features (np.ndarray): features after being transformed by the function
     """
-    raise NotImplementedError()
+
+    transformed_features = (features/10)**2
+    return transformed_features
 
 class Perceptron():
     def __init__(self, max_iterations=200):
@@ -48,7 +50,8 @@ class Perceptron():
 
         """
         self.max_iterations = max_iterations
-        raise NotImplementedError()
+        self.weights = None
+
 
     def fit(self, features, targets):
         """
@@ -64,7 +67,20 @@ class Perceptron():
         Returns:
             None (saves model and training data internally)
         """
-        raise NotImplementedError()
+
+        self.weights = np.ones(len(features[0])+1)
+
+        N = len(features)
+        for i in range(self.max_iterations):
+            for n in range(N):
+                if (self.weights[0]+np.dot(self.weights[1:],features[n]))*targets[n] <= 0:
+                    #self.weights[0] = self.weights[0] + np.dot(self.weights[1:], features[n]) - targets[n]
+                    self.weights[0] += targets[n]
+                    self.weights[1:] = self.weights[1:]+features[n]*targets[n]
+
+        return
+
+
 
     def predict(self, features):
         """
@@ -76,7 +92,11 @@ class Perceptron():
         Returns:
             predictions (np.ndarray): Output of saved model on features.
         """
-        raise NotImplementedError()
+        scores = np.dot(features,self.weights[1:])+self.weights[0]
+        preds = np.where(scores >=0,1,-1)
+        return preds
+
+
 
     def visualize(self, features, targets):
         """

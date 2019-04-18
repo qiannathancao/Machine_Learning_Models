@@ -34,6 +34,12 @@ class PolynomialRegression():
         You should implement the closed form solution of least squares as detailed in slide 10
         of the lecture slides linked above.
 
+        in test:
+            p = PolynomialRegression(degree)
+            p.fit(x, y)
+            y_hat = p.predict(x)
+
+
         Usage:
             import numpy as np
             
@@ -52,7 +58,8 @@ class PolynomialRegression():
             degree (int): Degree of polynomial used to fit the data.
         """
         self.degree = degree
-        raise NotImplementedError()
+        self.best_params = None
+
     
     def fit(self, features, targets):
         """
@@ -61,6 +68,14 @@ class PolynomialRegression():
         function is fit features, a 1D numpy array, to targets, another 1D
         numpy array.
         
+        my note:
+
+            def get_best_param(X, y):
+                X_transpose = X.T
+                best_params = inv(X_transpose.dot(X)).dot(X_transpose).dot(y)
+                # normal equation
+                # theta_best = (X.T * X)^(-1) * X.T * y
+                return best_params # returns a list
 
         Args:
             features (np.ndarray): 1D array containing real-valued inputs.
@@ -68,7 +83,14 @@ class PolynomialRegression():
         Returns:
             None (saves model and training data internally)
         """
-        raise NotImplementedError()
+        _features = np.ones((len(features),1))
+        for i in range(1, self.degree+1):
+            _features = np.append(_features,features**i,axis=1)
+
+        self.best_params = np.linalg.inv(_features.transpose().dot(_features)).dot(_features.transpose()).dot(targets)
+        # print ("param: ", self.best_params)
+        # print ("param shape: ", self.best_params.shape)
+        return
 
     def predict(self, features):
         """
@@ -80,7 +102,15 @@ class PolynomialRegression():
         Returns:
             predictions (np.ndarray): Output of saved model on features.
         """
-        raise NotImplementedError()
+        _features = np.ones((len(features),1))
+        for i in range(1,self.degree+1):
+            _features = np.append(_features,features**i,axis=1)
+        _features = _features
+        #print("\n#####_features######: ",_features)
+
+        #print("\n#####predict result #####: ", _features.dot(self.best_params))
+        return _features.dot(self.best_params)
+
 
     def visualize(self, features, targets):
         """
@@ -96,4 +126,8 @@ class PolynomialRegression():
         Returns:
             None (plots to the active figure)
         """
-        raise NotImplementedError()
+        prediction = self.predict(features)
+        test_x = features
+        plt.plot(features, targets, "b.")
+        plt.plot(test_x, prediction, "r--")
+        plt.savefig("polynomial_regression")
